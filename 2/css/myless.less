@@ -1,0 +1,94 @@
+@buttonBackground: green;
+
+@buttonColor: #ffff00;
+
+@buttonPadding: 10px;
+
+.button{
+
+background: @buttonBackground;
+
+color: @buttonColor;
+
+padding: @buttonPadding;
+
+display: inline-block;
+
+border-radius: 4px;
+
+}
+
+.jumbo-button{
+
+.button;
+
+padding: @buttonPadding + 30; //Ökar paddingen med 30px.
+
+}
+
+.light-button{
+
+.button;
+
+background: @buttonBackground * 1.8; //Ökar färgens värde. Ju högre ju ljusare. För mörkare minska.
+
+} 
+
+@aColor: #FF4500;
+
+#circle {
+
+width: 150px;
+
+height: 150px;
+
+border-radius: 50%; /* To create circle */
+
+background-color: @aColor;
+
+margin: 10px,
+
+}
+
+.square {
+
+width: 150px;
+
+height: 150px;
+
+background-color: @aColor;
+
+margin: 10px;
+
+}
+
+.base {
+
+border-radius: 50%; /* To create circle */
+
+background-color: @aColor;
+
+margin: 10px;
+
+}
+
+.baseSmall {
+
+.base;
+
+width: 50px;
+
+height: 50px;
+
+}
+
+.baseBig {
+
+.base;
+
+width: 250px;
+
+height: 250px;
+
+} 
+
